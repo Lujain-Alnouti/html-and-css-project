@@ -268,9 +268,20 @@
      margin-left:300px; 
      margin-top:30px;
     }
+    .border-ref{
+        border:2px solid #2C0835;
+    border-radius: 10px;
+    height:635px;
+    }
+    
         /******************************************************************************************************/
         
         @media only screen and (min-width:0px) and (max-width:480px){
+            .border-ref{
+                border:2px solid #2C0835;
+            border-radius: 10px;
+            height:1230px;
+            }
             .mid2-rate{
                 width:33px;
             }
@@ -486,6 +497,7 @@
             .ref-margin-top{
                 height:500px;
                 margin-top:-240px;
+              
                 }
             .margin-ref-info{
                 margin-left:10px;
@@ -532,6 +544,11 @@
 
         /*****************Tablet****************/
         @media only screen and (min-width:481px) and (max-width:768px){
+            .border-ref{
+                border:2px solid #2C0835;
+            border-radius: 10px;
+            height:626px;
+            }
             .margin-list{
                 margin-left:-25px;
                
