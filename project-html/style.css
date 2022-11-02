@@ -1,3 +1,21 @@
+
+.btn {
+   
+    background-color:#2C0835;
+    color: #DCD3CB;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left:30%;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color:#DCD3CB;
+    color: #2C0835;
+  }
 .bg-nav{
     background-color:#2C0835;
     height:350px;
@@ -12,8 +30,8 @@
 }
 .logo{
     display:inline-block;
-   width:60px; 
-   height:30px; 
+   width:70px; 
+   height:50px; 
    margin-left:40px;
 }
 .namemobile{
@@ -54,9 +72,13 @@
             display:inline-block; 
             font-family:'Abrill fatface'; 
             font-size:20px;
+            color: #2C0835;
+            text-decoration:none;
            margin-left:5px;
         }
-        
+        .personal-info :hover{
+            color: #2C0835;
+        }
         .flex-cont1{
             display:flex;
             flex-wrap:wrap;
@@ -73,6 +95,7 @@
             
              margin-left:630px; 
         }
+       
         .flex-cont2>div{
             color:#2C0835;
         }
@@ -87,6 +110,9 @@
             border: 2px black solid; 
             text-align: center;
         }
+        .cards :hover{
+            box-shadow:10px 10px 15px #DCD3CB;
+        }
         .sections{
             border-radius:10px;
             background-color: #2C0835;
@@ -95,6 +121,7 @@
             width:100%;
            
         }
+       
         footer{
             background-color: #2C0835;
             color: #DCD3CB;
@@ -119,6 +146,9 @@
             margin-left:30px;
             margin-top:25px;
             }
+        /* .main-title :hover{
+            box-shadow:10px 10px 50px #DCD3CB;
+            } */
         .margin-50{
             margin-left:50px;
         }
@@ -273,10 +303,38 @@
     border-radius: 10px;
     height:635px;
     }
+    .progress{
+        width:150px;
+    }
+    .navbar-tab{display: none;}
     
-        /******************************************************************************************************/
-        
+    
+        /*******************************************Mobile*************/
         @media only screen and (min-width:0px) and (max-width:480px){
+            .navbar-tab{display: none;}
+           
+            nav.menu {
+                width: 300px;
+                min-height: calc(100vh - 121px);
+                background-color: #03a9f4;
+                position: absolute;
+                left: -300px;
+                transition: .3s all;
+            }
+            nav.menu > a {
+                display: block;
+                padding: 5px;
+                margin: 15px 0 0px 20px;
+                color: #494949;
+                text-transform: uppercase;
+            }
+
+
+
+          .bur-sty{
+            color: #DCD3CB;
+            background-color: #2C0835;
+          }
             .border-ref{
                 border:2px solid #2C0835;
             border-radius: 10px;
@@ -286,23 +344,38 @@
                 width:33px;
             }
             .namemobile{
+                width: 100%;
                 display:inline-block;
+                text-align: center;
                 font-family:Impact;
-                font-size:15px;
+                font-size:20px;
+                font-weight: bold;
                 color: #2C0835;
                 background-color:#DCD3CB;
-              margin-left:25px;
+              /* margin-left:25px; */
               margin-top:10px;
             }
+            .btn {
+   
+                background-color:#2C0835;
+                color: #DCD3CB;
+                border: none;
+                color: white;
+                padding: 12px 30px;
+                cursor: pointer;
+                font-size:12px;
+                margin-left:30%;
+              }
            
             .name{
                 display: none;
             }
             .logo{
                 display:inline-block;
-               width:30px; 
-               height:20px; 
+               width:70px; 
+               height:40px; 
                margin-left:20px;
+               margin-top:10px;
             }
             .nav-item{
                 font-size:7px;
@@ -316,17 +389,17 @@
                 border-radius:2px;
                 display:block;
                  width:100%; 
-                 height:450px; 
+                 height:825px; 
                  background-color: #DCD3CB; 
                  margin-left:0px; 
                  margin-top:0px;
             }
             .profile-image{
             float:left;
-            margin-left:10px;
+            margin-left:34px;
              margin-top:9px;
-             width:50px;
-             height:50px;
+             width:250px;
+             height:250px;
             }
             .main-title{
                 margin-left:30px;
@@ -347,8 +420,8 @@
             .new-style-b{
                 display:flex;
                 flex-wrap: wrap;
-                margin-top:5px;
-               margin-left:2px;
+                margin-top:0px;
+               margin-left:1%;
             }
             .new-style-I{
                 border-radius:10px;
@@ -473,19 +546,19 @@
                 font-size:8px;
              }
             .cer-date1{
-                padding-left:50px; 
+                padding-left:45px; 
                  color:#2C0835; 
-                font-size:8px;
+                font-size:9px;
               }
             .cer-date2{
-                padding-left:120px;  
+                padding-left:115px;  
                 color:#2C0835;
-                 font-size:8px;
+                 font-size:9px;
                   }
             .cer-date3{
-                padding-left:105px;
+                padding-left:100px;
                 color:#2C0835; 
-                font-size:8px;
+                font-size:9px;
                 }
             .cer-info{
                 width:319px;}
@@ -493,10 +566,11 @@
             .cer-desc{
                 margin-left:5px; 
                 width:250px;
+                font-size:12px;
                   }
             .ref-margin-top{
                 height:500px;
-                margin-top:-240px;
+                margin-top:-210px;
               
                 }
             .margin-ref-info{
@@ -544,6 +618,20 @@
 
         /*****************Tablet****************/
         @media only screen and (min-width:481px) and (max-width:768px){
+            .navbar-tab{display:flex;}
+
+          .navbar-web{display:none;}
+            .btn {
+   
+                background-color:#2C0835;
+                color: #DCD3CB;
+                border: none;
+                color: white;
+                padding: 12px 30px;
+                cursor: pointer;
+                font-size:14px;
+                margin-left:40%;
+              }
             .border-ref{
                 border:2px solid #2C0835;
             border-radius: 10px;
@@ -556,20 +644,30 @@
             .namemobile{
                 display:inline-block;
                 font-family:Impact;
-                font-size:15px;
+                font-size:20px;
                 color: #2C0835;
                 background-color:#DCD3CB;
-              margin-left:225px;
-              margin-top:20px;
+                text-align:center;
+              margin-left:15px;
+              margin-top:80px;
+              width:400px;
+              
             }
+            .profile-image{
+                float:left;
+                margin-left:64px;
+                 margin-top:6px;
+                 width:250px;
+                 height:250px;
+                }
            
             .name{
                 display: none;
             }
             .logo{
                 display:inline-block;
-               width:50px; 
-               height:30px; 
+               width:100px; 
+               height:50px; 
                margin-left:20px;
             }
             .nav-item{
@@ -585,18 +683,12 @@
                 border-radius:2px;
                 display:block;
                  width:100%; 
-                 height:300px; 
+                 height:600px; 
                  background-color: #DCD3CB; 
                  margin-left:0px; 
                  margin-top:0px;
             }
-            .profile-image{
-            float:left;
-            margin-left:25px;
-             margin-top:6px;
-             width:80px;
-             height:70px;
-            }
+            
             .main-title{
                 margin-left:30px;
                 margin-top:5px;
@@ -612,12 +704,13 @@
                 font-family:'Abrill fatface'; 
                 font-size:10px;
                 margin-left:5px;
+                font-weight:bold;
                 }
             .new-style-b{
                 display:flex;
                 flex-wrap: wrap;
-                margin-top:5px;
-               margin-left:40px;
+                margin-top:90px;
+               margin-left:5%;
             }
             .new-style-I{
                 border-radius:10px;

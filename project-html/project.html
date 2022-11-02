@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
     
+    
    
 </head>
 <body style="background-color:#F9F3EE;">
     <div class="bg-nav">
-        <nav class="navbar navbar-expand-lg">
-            <img src="logo.png" alt="" class="logo">
+       
+        <nav class="navbar navbar-expand-lg navbar-web">
+            
+            <img src="Images/logo.png" alt="" class="logo">
+            
+            <button style="background-color:#2C0835; margin-right:15px;  border:2px solid #DCD3CB; margin-top:5px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color:#DCD3CB;" ></i>
+              </button> 
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="nav justify-content-end margin-700">    
              
             <li class="nav-item">
@@ -38,28 +46,64 @@
               <li class="nav-item">
                 <a class="nav-link nav-item" href="#languages">Languages</a>
               </li>  
-          </ul> </nav>
+          </ul>
+        </div>
+        </nav>
+        <!--navbar for tablet-->
+        <nav class="navbar navbar-expand-lg navbar-tab">
+            
+            <img src="Images/logo.png" alt="" class="logo">
+           
+        <ul class="nav justify-content-end margin-700">    
+             
+            <li class="nav-item">
+              <a class="nav-link nav-item" aria-current="page" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-item" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-item" href="#experince">Experince</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-item" href="#technical">Technical</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-item "href="#certificate">Certificate</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link nav-item" href="#reference">Reference</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link nav-item" href="#languages">Languages</a>
+              </li>  
+          </ul>
+        </nav>
+        <!--end navbar for table-->
           
           <div class="name">
             <h1 style="font-family:Impact; text-align:center;" class="nav-item">LUJAIN ALNOUTI</h1>
             <h3 style="font-family:Impact; text-align:center;" class="nav-item">Computer Informayion System</h3>
           </div>
-        </div> <!--navbar--><!--relative secttion-->
+        </div> <!--navbar-->
+        
 
     <div class="flex-cont1">
         <div class=" div-left" >
-            <img src="luj1b.jpeg" alt="" class="profile-image" >
+            <img src="Images/luj1b.jpeg" alt="" class="profile-image" >
+            <div>
             <div class="namemobile">
-                <h1 style="text-align: center; font-size:13px;">LUJAIN ALNOUTI</h1>
-                <h3 style="margin-left:10px; font-size:13px;">Computer Informayion System</h3>
-              </div> 
+                <h1 style="text-align: center;">LUJAIN ALNOUTI</h1>
+                <h3 >Computer Informayion System</h3>
+              </div> </div>
             <br> <br>
+            
            <div class="new-style-b">
             <div class="new-style-I">
             <h3 class="main-title">Contact</h3>
             <hr>
             <i class="fa-solid fa-envelope  icon margin-50" ></i>
-            <p class="personal-info">Lujain.nouti@gmail.com</p> <br>
+            <p class="personal-info"> <a href="mailto:Lujain.nouti@gmail.com" class="personal-info"> Lujain.nouti@gmail.com</a></p> <br>
             <i class="fa-solid fa-phone icon margin-50"></i>
             <p class="personal-info">0778097736</p> <br>
             <i class="fa-solid fa-house-user  icon margin-50"></i>
@@ -96,23 +140,27 @@
             <div class="new-style-I">
             <h3 class="main-title" id="languages">Languages</h3>
             <hr>
+            
             <ul class="personal-info margin-50">
                 <li>Arabic
-                    <img src="full-level.png" alt="" class="icon full-rate margin-40">
+                     <img src="Images/full-level.png" alt="" class="icon full-rate margin-40">
                 </li>
                 <li>English
                     <ul class="margin-list">
                         <li>Writting</li>
-                        <img src="mid-level.png" alt="" class="icon mid-rate margin-30L ">
+                        <img src="Images/mid-level.png" alt="" class="icon mid-rate margin-30L ">
                         <li>Speaking</li>
-                        <img src="level7-removebg-preview.png" alt="" class="icon mid2-rate margin-30L ">
+                        <img src="Images/level7-removebg-preview.png" alt="" class="icon mid2-rate margin-30L ">
                         <li>Reading</li>
-                        <img src="level8.png" alt="" class="icon mid-rate margin-30L ">
+                        <img src="Images/level8.png" alt="" class="icon mid-rate margin-30L ">
                     </ul>
-                    <!-- <img src="mid-level.png" alt="" class="icon mid-rate margin-30 "> -->
+              
                 </li>                
-            </ul>
+            </ul> 
         </div></div>
+        <br>
+        <a href="Images/Resume Lujain Al Nouti_I (1).pdf" target="_blank">
+        <button class="btn"><i class="fa fa-download"></i> Download</button></a>
         </div><!--Leftsect-->
 
         <!-- right section-->
@@ -121,7 +169,7 @@
             <div id="education">
                 <h2 class="sections">Education</h2>
                 <div class="education-sec">
-                    <img src="JUST-removebg-preview.png" alt="" class="university-img">
+                    <img src="Images/JUST-removebg-preview.png" alt="" class="university-img">
                     <div class="edu-info">
                         <p >Computer Information System 
                             <span class="edu-date">(Sep 2018 - Aug 2022)</span> </p>
@@ -204,23 +252,23 @@
                 <div class="border-ref">
                 <div style="display:block;">
                     <div style="display: inline-block;" class="cards margin-ref-info" >
-                        <img src="Hala-H.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
+                        <img src="Images/Hala-H.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
                         <hr>
                         <p class="personal-info" style="text-align:center; font-size:15px;">Hala Hamdan</p><br>
                         <p class="personal-info" style="text-align:center; font-size:15px;">Full Stack Technical Trainer at Orange</p><br>
                         <i class="fa-solid fa-envelope  icon" style="font-size:15px;"></i>
-                        <p class="personal-info" style="font-size:15px;">hala.ali.hamdan@gmail.com</p> <br>
+                        <p class="personal-info" > <a href="mailto: hala.ali.hamdan@gmail.com" class="personal-info" style="font-size:15px;"> hala.ali.hamdan@gmail.com</a></p> <br>
                         <i class="fa-solid fa-phone icon" style="margin-left:70px; font-size:15px;"></i>
                         <p class="personal-info" style="margin-right:25%; font-size:15px;">0776802579</p> <br>
 
                     </div>
                     <div style="display: inline-block;" class="cards margin-ref-info" >
-                        <img src="Alaa.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
+                        <img src="Images/Alaa.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
                         <hr>
                         <p class="personal-info" style="text-align:center; font-size:15px;">Alaa Qazaq</p><br>
                         <p class="personal-info" style="text-align:center; font-size:15px;">Lead Trainer for Full-Stack web developer</p><br>
                         <i class="fa-solid fa-envelope  icon" style="font-size:15px;"></i>
-                        <p class="personal-info" style="font-size:15px;">qazaq.alaa@gmail.com</p> <br>
+                        <p class="personal-info"> <a href="mailto:qazaq.alaa@gmail.com" class="personal-info" style="font-size:15px;"> qazaq.alaa@gmail.com</a></p> <br>
                         <i class="fa-solid fa-phone icon" style="margin-left:70px; font-size:15px;"></i>
                         <p class="personal-info" style="margin-right:25%; font-size:15px;">0776807230</p> <br>
 
@@ -228,23 +276,23 @@
 
                     <div style="display:block;">
                         <div style="display: inline-block;" class="cards margin-ref-info" >
-                            <img src="Mohammad.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
+                            <img src="Images/Mohammad.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
                             <hr>
                             <p class="personal-info" style="text-align:center; font-size:15px;">Mohammed Frehat</p><br>
                             <p class="personal-info" style="text-align:center; font-size:15px;">Coding Academy Manager/Irbid and Zarqa</p><br>
                             <i class="fa-solid fa-envelope  icon" style="font-size:15px;"></i>
-                            <p class="personal-info" style="font-size:15px;">Mohammed.Frehat@gmail.com</p> <br>
+                            <p class="personal-info"><a href="mailto:Mohammed.Frehat@gmail.com" class="personal-info" style="font-size:15px;">Mohammed.Frehat@gmail.com</a></p> <br>
                             <i class="fa-solid fa-phone icon" style="margin-left:70px; font-size:15px;"></i>
                             <p class="personal-info" style="margin-right:25%; font-size:15px;">0776807230</p> <br>
     
                         </div>
                         <div style="display: inline-block;" class="cards margin-ref-info" >
-                            <img src="Hala.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
+                            <img src="Images/Hala.jpeg" alt="" style="border-radius:50%; width:100px; height:100px;margin-top:10px;" class="icon" >
                             <hr>
                             <p class="personal-info" style="text-align:center; font-size:15px;">Hala Obidate</p><br>
                             <p class="personal-info" style="text-align:center; font-size:15px;">Job Coach at Orange Coding Academy</p><br>
                             <i class="fa-solid fa-envelope  icon" style="font-size:15px;"></i>
-                            <p class="personal-info" style="font-size:15px;">Hala.Obidate@gmail.com</p> <br>
+                            <p class="personal-info" style="font-size:15px;"><a href="mailto:Hala.Obidate@gmail.com" class="personal-info" style="font-size:15px;">Hala.Obidate@gmail.com</a></p> <br>
                             <i class="fa-solid fa-phone icon" style="margin-left:70px; font-size:15px;"></i>
                             <p class="personal-info" style="margin-right:25%; font-size:15px;">0776809087</p> <br>
     
@@ -268,7 +316,7 @@
          and group work and collaboration experience I continue to be motivated to grow and improve my skills.
       </p></div>
 
-      <img src="logo.png" alt="" class="logo-footer">
+      <img src="Images/logo.png" alt="" class="logo-footer">
 
       
 
@@ -280,14 +328,14 @@
       <a href="https://www.linkedin.com/feed/" target="_blank" style="text-decoration:none;">
         <i class="fa-brands fa-linkedin social-icon" ></i>
       </a>
-      <a href="https://www.facebook.com/" target="_blank" style="text-decoration:none;">
+      <a href="https://www.facebook.com/lujain.alnouti" target="_blank" style="text-decoration:none;">
         <i class="fa-brands fa-square-facebook social-icon"></i>
       </a>
       <a href="https://twitter.com/" target="_blank" style="text-decoration:none;">
         <i class="fa-brands fa-square-twitter social-icon"></i>
       </a>
       </div>
-      <img src="logo.png" alt="" style="width:50px; height:40px; margin-left:80px; margin-top:25px;" class="logo-footer2">
+      <img src="Images/logo.png" alt="" style="width:50px; height:40px; margin-left:80px; margin-top:25px;" class="logo-footer2">
 
       </footer>
 </body>
