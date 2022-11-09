@@ -299,27 +299,170 @@
      margin-top:30px;
     }
     .border-ref{
-        border:2px solid #2C0835;
+        border:2px solid #DCD3CB;
     border-radius: 10px;
     height:635px;
     }
     .progress{
         width:150px;
     }
-    .navbar-tab{display: none;}
+    #phonelogo{
+        display: none;
+    }
+
+
+
+    
+    label .menu {
+         position: absolute;
+        left: 200px;
+        top: -110px;
+        z-index: 100;
+        width: 200px;
+        height: 50px; 
+        background: #DCD3CB;
+        border-radius: 10% 10% 10% 10%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+        cursor: pointer;
+        
+        
+      }
+      #ulm{
+       
+       
+        top: 150px;
+        
+      
+      }
+      
+      
+      label .hamburger {
+        position: absolute;
+        top: 145px;
+        left: 50px;
+        width: 30px;
+        height: 2px;
+        background: #DCD3CB;
+        display: none;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+      }
+      
+      label .hamburger:after, label .hamburger:before {
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #DCD3CB;
+        
+      }
+      
+      label .hamburger:before { top: -10px; }
+      
+      label .hamburger:after { bottom: -10px; }
+      
+      label input { display: none; }
+      
+      label input:checked + .menu {
+        /* box-shadow: 0 0 0 10vw #FFF, 0 0 0 10vh #fff;
+        border-radius: 0; */
+        width: 100px ;
+        
+        
+        
+        
+      }
+      
+      
+      label input:checked + .menu .hamburger {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+      }
+      
+      label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+        
+      }
+      
+      label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+        
+      }
+      
+      label input:checked + .menu + ul { opacity: 1; }
+      
+      label ul {
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        -webkit-transition: .25s 0s ease-in-out;
+        transition: .25s 0s ease-in-out;
+        color: #fff;
+      }
+      
+      label a {
+        margin-bottom: 1em;
+        display: block;
+        color: #2C0835;
+        text-decoration: none;
+        color: #fff;
+        
+        
+      }
+  
+  
+   
     
     
         /*******************************************Mobile*************/
         @media only screen and (min-width:0px) and (max-width:480px){
+
             .navbar-tab{display: none;}
            
             nav.menu {
                 width: 300px;
                 min-height: calc(100vh - 121px);
-                background-color: #03a9f4;
+                background-color: #2C0835;
                 position: absolute;
                 left: -300px;
                 transition: .3s all;
+            }
+            /* .mynav2{
+                display: none;
+                
+        
+            } */
+            #phonelogo{
+                display: inline;
+                
+            }
+            label input:checked + .menu {
+                box-shadow: 0 0 0 60vw #2C0835, 0 0 0 80vh #2C0835;
+                border-radius: 0;
+                width: 100px ;
+                
+                
+                
+                
+              }
+            label .hamburger {
+              display: block;
             }
             nav.menu > a {
                 display: block;
